@@ -1,11 +1,12 @@
-" Indentation settings
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+" Indentation settings for Python Language
+autocmd FileType python set expandtab
+autocmd FileType python set tabstop=4
+autocmd FileType python set softtabstop=4
+autocmd FileType python set shiftwidth=4
+autocmd FileType python set textwidth=80 
+" ********************
 
 set autoindent
-set textwidth=80
 
 filetype plugin indent on
 syntax on
