@@ -7,6 +7,7 @@ autocmd FileType python set textwidth=80
 " ********************
 
 set autoindent
+colorscheme lucius
 
 filetype plugin indent on
 syntax on
@@ -31,6 +32,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'L9'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
 
 " Track the engine.
 Plugin 'SirVer/ultisnips'
@@ -59,3 +61,8 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-p>"
 let g:UltiSnipsListSnippets        = "<c-k>" "List possible snippets based on current file
 " **********************
 
+" Nerdtree Configuration
+autocmd vimenter * NERDTree
+let NERDTreeShowHidden=1
+nnoremap <F2> :NERDTreeToggle<cr>
+" " *********************
